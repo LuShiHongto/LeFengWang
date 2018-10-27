@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>乐蜂网</title>
+		<link rel="stylesheet" type="text/css" href="../css/liebiao.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/liebiao_1.css"/>
+		<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="../jquery-cookie/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../js/liebiao.js"></script>
+		<script type="text/javascript" src="../lib/jquery.toTop.js"></script>
+	</head>
+	<body>
+		<!-- 头顶三部分 -->
+		<div class="Chead">
+			<!-- 头部一部分 -->
+			<div class="Chead-info">
+				<div class="Chead-info-box">
+					<a class="Chead-app" href="javascript:;">手机乐蜂</a>
+					<!-- 收藏乐蜂 --><span class="Chead-save" id="Chead-save">收藏乐蜂</span> 
+					<!-- 快速导航 --> <span class="fast-nav turl" id="Chead_fastnav">快速导航<i></i></span>
+					<!-- 我的订单--><a class="turl Chead_myh" href="#" id="Chead_myh">我的订单<i></i></a>
+					<!-- 欢迎乐峰 --><span class="Chead-welcome"></span> 
+					<!-- 发货地址 -->送货到<a href="#" class="areaSellBtn">广州</a>
+				</div>
+			</div>
+			<div id="Chead-mxai">
+				<!-- 头部二部分 -->
+				<div class="Chead-main">
+					<div class="Chead-logo">
+						<a href="../index.html"></a>
+					</div>
+					<div id="Chead_search" class="Chead-search">
+						<!--搜索-->
+						<div class="search-input">
+							<strong id="search-submit" class="search-submit">搜索</strong> <input autocomplete="off" id="search" value="搜商品" type="text" />
+							<div id="auto" class="searchtip">
+							</div>
+						</div>
+						<p id="hotp">
+							热门:
+							<a class="highlight" href="#">韩束集团</a>
+							<a class="highlight" href="#">洁面</a>
+							<a class="highlight" href="#">口红</a>
+							<a class="highlight" href="#">眼霜</a>
+						</p>
+					</div>
+					<!--购物车-->
+					<div class="Chead-shopping-wrap">
+						<div class="Chead-shopping" id="Chead-shopping">
+							<div class="shopping-btn">
+								<strong>0</strong>
+							</div>
+							<div class="shopping-list" style="display:none;">
+								<div class="shopping-list-title">
+									<strong>0</strong>
+								</div>
+								<div class="shopping-list-pro noshop" style="display:none;">
+									您的购物车还没有商品，<br />
+									赶紧去选购吧！
+								</div>
+								<div class="shopping-list-pro haveshop" style="display:none;">
+									<i></i>
+									<div class="shopping-list-bar" id="shopping_list_info">
+									</div>
+									<p>
+										共<b id="totalProduct" class="countnum">0</b>件商品
+									</p>
+									<p>
+										<span>共计：<b id="totalMoney" class="countprice"></b></span>
+									</p>
+									<a class="goshopping" href="gouwuche.html">去购物车结算</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 头部三部分 -->
+				<div id="Cnav-main_erji">
+					<div class="Cnav-main">
+						<div class="Cnav-menu-btn active">
+							<a href="javascript:"> 商品分类 </a> <i></i>
+						</div>
+						<div class="Cnav-one">
+							<a href="#">首页</a>
+							<a href="javascript:;" target="_blank">蜂购全球</a>
+						</div>
+						<div class="Cnav-right">
+							<a href="#" target="_blank" class="Cnav-right-icon-1"></a>
+							<a href="#" target="_blank" class="Cnav-right-icon-2"></a>
+							<a href="#" target="_blank" class="Cnav-right-icon-3"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 二级导航 -->
+			<div class="fl-main">
+			<div class="float-list" style="display:none">
+					<div class="orderDivId">
+						<dl id="webf0" >
+			<dt>
+				<strong class="class-1"><img src="http://a.vpimg4.com/upload/category/2016/04/20/136/c97f849b-37c7-4deb-8b21-cabe17ae8342.png" />护肤用品</strong>
+			<p>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E8%86%9C" target="_blank">
+					面膜        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E9%9A%94%E7%A6%BB" target="_blank">
+					防晒隔离        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85" target="_blank">
+					护肤套装        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2" target="_blank">
+					洁面        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E9%83%A8%E6%8A%A4%E8%82%A4" target="_blank">
+					面部护肤        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+					眼部护理        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E8%86%9C" target="_blank">
+								面膜 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E8%B4%B4%E8%86%9C" target="_blank">
+								面贴膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%85%8D%E6%B4%97%E9%9D%A2%E8%86%9C" target="_blank">
+								免洗面膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E8%86%9C" target="_blank">
+								眼膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B3%A5%E8%86%9C" target="_blank">
+								泥膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B3%A1%E6%B3%A1%E9%9D%A2%E8%86%9C" target="_blank">
+								泡泡面膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%BC%BB%E8%86%9C%E9%BC%BB%E8%B4%B4" target="_blank">
+								鼻膜鼻贴                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85" target="_blank">
+								护肤套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%82%A4%E5%A5%97%E8%A3%85" target="_blank">
+								护肤套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E9%83%A8%E6%8A%A4%E8%82%A4" target="_blank">
+								面部护肤 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9D%A2%E9%9C%9C" target="_blank">
+								面霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E4%B9%B3%E6%B6%B2" target="_blank">
+								乳液                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%88%BD%E8%82%A4%E6%B0%B4" target="_blank">
+								爽肤水                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%B2%BE%E5%8D%8E" target="_blank">
+								精华                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%96%B7%E9%9B%BE" target="_blank">
+								喷雾                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E9%9A%94%E7%A6%BB" target="_blank">
+								防晒隔离 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E4%B9%B3" target="_blank">
+								防晒乳                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%98%B2%E6%99%92%E5%96%B7%E9%9B%BE" target="_blank">
+								防晒喷雾                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%9A%94%E7%A6%BB%E4%B9%B3" target="_blank">
+								隔离乳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2" target="_blank">
+								洁面 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E4%B9%B3" target="_blank">
+								洁面乳                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E8%86%8F" target="_blank">
+								洁面膏                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E7%9A%82" target="_blank">
+								洁面皂                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+								眼部护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%9C%9C" target="_blank">
+								眼霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E8%86%9C" target="_blank">
+								眼膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E7%B2%BE%E5%8D%8E" target="_blank">
+								眼部精华                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E9%83%A8%E6%8A%A4%E7%90%86%E5%A5%97%E8%A3%85" target="_blank">
+								眼部护理套装                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf1" >
+			<dt>
+				<strong class="class-2"><img src="http://a.vpimg4.com/upload/category/2016/04/20/5/3c91b622-85bb-4cba-b35d-13e0af9c93c1.png" />彩妆用品</strong>
+			<p>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%BA%95%E5%A6%86" target="_blank">
+					底妆        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E5%A6%86" target="_blank">
+					眼妆        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%94%87%E5%A6%86" target="_blank">
+					唇妆        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E5%A6%86" target="_blank">
+					卸妆        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E7%94%B2" target="_blank">
+					美甲        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%BD%A9%E5%A6%86%E5%A5%97%E8%A3%85" target="_blank">
+					彩妆套装        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%BA%95%E5%A6%86" target="_blank">
+								底妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=BB%E9%9C%9C" target="_blank">
+								BB霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=CC%E9%9C%9C" target="_blank">
+								CC霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%B2%89%E5%BA%95%E6%B6%B2" target="_blank">
+								粉底液                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%B2%89%E9%A5%BC" target="_blank">
+								粉饼                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%85%AE%E7%BA%A2" target="_blank">
+								腮红                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%9C%9C%E7%B2%89%E6%95%A3%E7%B2%89" target="_blank">
+								蜜粉散粉                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A6%86%E5%89%8D%E4%B9%B3" target="_blank">
+								妆前乳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%94%87%E5%A6%86" target="_blank">
+								唇妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%94%87%E5%BD%A9" target="_blank">
+								唇彩                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%94%87%E8%9C%9C" target="_blank">
+								唇蜜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%A3%E7%BA%A2" target="_blank">
+								口红                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E7%94%B2" target="_blank">
+								美甲 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8C%87%E7%94%B2%E6%B2%B9" target="_blank">
+								指甲油                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E7%94%B2%E6%B0%B4" target="_blank">
+								卸甲水                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8C%87%E7%94%B2%E6%8A%A4%E7%90%86" target="_blank">
+								指甲护理                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E5%A6%86" target="_blank">
+								眼妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9D%AB%E6%AF%9B%E8%86%8F" target="_blank">
+								睫毛膏                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E7%BA%BF%E7%AC%94" target="_blank">
+								眼线笔                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E7%BA%BF%E6%B6%B2" target="_blank">
+								眼线液                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E5%BD%B1" target="_blank">
+								眼影                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%89%E7%AC%94" target="_blank">
+								眉笔                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%89%E7%B2%89" target="_blank">
+								眉粉                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E5%A6%86" target="_blank">
+								卸妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E5%A6%86%E6%B0%B4" target="_blank">
+								卸妆水                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E5%A6%86%E6%B2%B9" target="_blank">
+								卸妆油                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%B8%E5%A6%86%E4%B9%B3" target="_blank">
+								卸妆乳                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%9C%BC%E5%94%87%E5%8D%B8%E5%A6%86" target="_blank">
+								眼唇卸妆                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%BD%A9%E5%A6%86%E5%A5%97%E8%A3%85" target="_blank">
+								彩妆套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%BD%A9%E5%A6%86%E5%A5%97%E8%A3%85" target="_blank">
+								彩妆套装                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf2" >
+			<dt>
+				<strong class="class-3"><img src="http://a.vpimg4.com/upload/category/2016/04/26/97/8cbcff4d-84db-4ee5-9bf8-cfeef879424b.png" />美容工具</strong>
+			<p>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%AE%B9%E5%B7%A5%E5%85%B7" target="_blank">
+					美容工具        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+					美妆工具        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%8F%91%E5%B7%A5%E5%85%B7" target="_blank">
+					美发工具        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E7%94%B2%E5%B7%A5%E5%85%B7" target="_blank">
+					美甲工具        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E5%B7%A5%E5%85%B7" target="_blank">
+					洁面工具        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8C%96%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+					化妆工具        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%AE%B9%E5%B7%A5%E5%85%B7" target="_blank">
+								美容工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%AE%B9%E5%B7%A5%E5%85%B7" target="_blank">
+								美容工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%8F%91%E5%B7%A5%E5%85%B7" target="_blank">
+								美发工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%8F%91%E6%A2%B3" target="_blank">
+								美发梳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E5%B7%A5%E5%85%B7" target="_blank">
+								洁面工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%81%E9%9D%A2%E5%B7%A5%E5%85%B7" target="_blank">
+								洁面工具                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+								美妆工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+								美妆工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E7%94%B2%E5%B7%A5%E5%85%B7" target="_blank">
+								美甲工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E7%94%B2%E5%B7%A5%E5%85%B7" target="_blank">
+								美甲工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8C%96%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+								化妆工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8C%96%E5%A6%86%E5%B7%A5%E5%85%B7" target="_blank">
+								化妆工具                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf3" class="class-4-dl">
+			<dt>
+				<strong class="class-4"><img src="http://a.vpimg4.com/upload/category/2016/04/20/77/6a4e12f4-bea7-4dc2-9eff-6b0196e328a7.png" />香水香氛</strong>
+			<p>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%A6%99%E6%B0%B4%E5%A5%97%E8%A3%85" target="_blank">
+					香水套装        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A5%B3%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+					女士香水        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%94%B7%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+					男士香水        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B7%A1%E9%A6%99%E6%B0%B4" target="_blank">
+					淡香水        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%A6%99%E6%B0%9B%E7%B2%BE%E6%B2%B9" target="_blank">
+					香氛精油        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%B5%B0%E7%8F%A0%E9%A6%99%E6%B0%B4" target="_blank">
+					走珠香水        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E9%A6%99%E6%B0%B4%E5%A5%97%E8%A3%85" target="_blank">
+								香水套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E9%A6%99%E6%B0%B4%E5%A5%97%E8%A3%85" target="_blank">
+								香水套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%94%B7%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+								男士香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%94%B7%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+								男士香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E9%A6%99%E6%B0%9B%E7%B2%BE%E6%B2%B9" target="_blank">
+								香氛精油 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8D%95%E6%96%B9%E7%B2%BE%E6%B2%B9" target="_blank">
+								单方精油                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A4%8D%E6%96%B9%E7%B2%BE%E6%B2%B9" target="_blank">
+								复方精油                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%9F%BA%E5%BA%95%E7%B2%BE%E6%B2%B9" target="_blank">
+								基底精油                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A5%B3%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+								女士香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A5%B3%E5%A3%AB%E9%A6%99%E6%B0%B4" target="_blank">
+								女士香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B7%A1%E9%A6%99%E6%B0%B4" target="_blank">
+								淡香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B7%A1%E9%A6%99%E6%B0%B4" target="_blank">
+								淡香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E8%B5%B0%E7%8F%A0%E9%A6%99%E6%B0%B4" target="_blank">
+								走珠香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%B5%B0%E7%8F%A0%E9%A6%99%E6%B0%B4" target="_blank">
+								走珠香水                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf4" class="class-5-dl">
+			<dt>
+				<strong class="class-5"><img src="http://a.vpimg4.com/upload/category/2016/04/20/104/8592564a-b2ed-4e40-a777-c53b78714af5.png" />个人护理</strong>
+			<p>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A4%B4%E5%8F%91%E6%8A%A4%E7%90%86" target="_blank">
+					头发护理        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%BA%AB%E4%BD%93%E6%8A%A4%E7%90%86" target="_blank">
+					身体护理        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%A3%E8%85%94%E6%8A%A4%E7%90%86" target="_blank">
+					口腔护理        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%89%8B%E8%B6%B3%E6%8A%A4%E7%90%86" target="_blank">
+					手足护理        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E4%BD%93%E7%98%A6%E8%BA%AB" target="_blank">
+					美体瘦身        </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%83%B8%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+					胸部护理        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%A4%B4%E5%8F%91%E6%8A%A4%E7%90%86" target="_blank">
+								头发护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%97%E6%8A%A4%E5%A5%97%E8%A3%85" target="_blank">
+								洗护套装                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B4%97%E5%8F%91%E6%B0%B4" target="_blank">
+								洗发水                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E5%8F%91%E7%B4%A0" target="_blank">
+								护发素                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%91%E8%86%9C" target="_blank">
+								发膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%AE%9A%E5%9E%8B%E5%95%AB%E5%96%B1" target="_blank">
+								定型啫喱                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%AE%9A%E5%9E%8B%E5%96%B7%E9%9B%BE" target="_blank">
+								定型喷雾                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%91%E8%9C%A1" target="_blank">
+								发蜡                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%A3%E8%85%94%E6%8A%A4%E7%90%86" target="_blank">
+								口腔护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%89%99%E8%86%8F" target="_blank">
+								牙膏                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%89%99%E5%88%B7" target="_blank">
+								牙刷                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%BC%B1%E5%8F%A3%E6%B0%B4" target="_blank">
+								漱口水                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%89%99%E7%BA%BF" target="_blank">
+								牙线                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E5%8F%A3%E8%85%94%E6%8A%A4%E7%90%86%E5%A5%97%E8%A3%85" target="_blank">
+								口腔护理套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E4%BD%93%E7%98%A6%E8%BA%AB" target="_blank">
+								美体瘦身 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E4%BD%93%E7%98%A6%E8%BA%AB" target="_blank">
+								美体瘦身                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E7%BE%8E%E4%BD%93%E4%BB%AA" target="_blank">
+								美体仪                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E8%BA%AB%E4%BD%93%E6%8A%A4%E7%90%86" target="_blank">
+								身体护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B2%90%E6%B5%B4%E9%9C%B2" target="_blank">
+								沐浴露                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%BA%AB%E4%BD%93%E4%B9%B3" target="_blank">
+								身体乳                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%84%B1%E6%AF%9B%E8%86%8F" target="_blank">
+								脱毛膏                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%BA%AB%E4%BD%93%E6%8A%A4%E7%90%86%E5%A5%97%E8%A3%85" target="_blank">
+								身体护理套装                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%B2%90%E6%B5%B4%E5%A5%97%E8%A3%85" target="_blank">
+								沐浴套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E6%89%8B%E8%B6%B3%E6%8A%A4%E7%90%86" target="_blank">
+								手足护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E6%89%8B%E9%9C%9C" target="_blank">
+								护手霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E6%8A%A4%E8%B6%B3%E9%9C%9C" target="_blank">
+								护足霜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%B6%B3%E8%86%9C" target="_blank">
+								足膜                    </a>
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%B6%B3%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+								足部护理                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="http://search.lefeng.com/search/showresult?keyword=%E8%83%B8%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+								胸部护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="http://search.lefeng.com/search/showresult?keyword=%E8%83%B8%E9%83%A8%E6%8A%A4%E7%90%86" target="_blank">
+								胸部护理                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+
+						<a class="class-more-tips" target="_blank" href="http://list.lefeng.com"><i></i></a>
+						<a class="class-more-btn" target="_blank" href="#">查看全部分类 &gt;&gt;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 返回顶部 -->
+		<div class="scroll-to-top" id="scroll-to-top" style="display:none;"><i></i></div>
+		<!-- 头部以下 -->
+<form action="/showGoodsList" id="showrGoods" autocomplete="off">
+
+    <input type="hidden" value="" id="priceHidden" name="priceHidden">
+    <input type="hidden" value="" id="sortHidden" name="sortHidden">
+    <input type="hidden" value="2" id="pageHidden" name="pageHidden">
+    <input type="hidden" value="800128262" id="brandIdHidden" name="brandIdHidden">
+		<!-- 购物背景图 -->
+            <div class="brand-img">
+				<img src="http://b.appsimg.com/upload/hhcapps/2018/09/28/144/hhc15381048526907gey.jpg" alt="品购背景" />
+			</div>
+            <!-- <div class="w1012"> -->
+        <div class="clothList">
+            <span class="order">
+                <!-- 折扣排序 -->
+                <a name="sortDiscount" href="javascript:void(0)" class="zhekou pristate pristate1"><b></b>折扣</a>
+                <!-- 价格排序 -->
+                <a name="sortPrice" href="javascript:void(0)" class="jiage pristate pristate1">价格<b></b></a>  
+                <!-- 销量排序 -->
+                <a name="sortSales" href="javascript:void(0)" class="pristate pristate1"><b></b>销量</a>
+            </span>
+        </div>
+              
+        <div class="makeup"></div>
+        <!--  去掉分页  下拉时调用剩下的数据
+        <div class="pages">
+        </div>
+           -->
+</form>
+
+<!--加入购物车成功-->
+<div class="alt-succ" id="addsuccess" style="display:none;">
+    <div class="sum">
+        <h3>该商品已成功放入购物车</h3>
+        <p>购物车共 <b>1</b> 件商品&nbsp;&nbsp;合计：<b></b> 元</p>
+        <p><a class="pay" href="http://shopping.lefeng.com/showCart">去结算</a><a href="javascript:;">&lt;&lt;继续购物</a></p>
+        <span class="succ-ico"></span>
+    </div>
+    <a class="succ-close" href="javascript:;">关闭</a>
+</div>
+<!--加入购物车失败-->
+<div class="alt-succ failure" style="display: none;">
+    <div class="sum">
+        <h3><span class="succ-ico"></span>加入购物车失败请稍后再试</h3>
+    </div>
+    <a class="succ-close" href="javascript:;">关闭</a>
+</div>
+		<!--页尾-->
+		<div class="Cfooter">
+			<div class="Cfooter_service">
+				<ul class="w1000">
+					<li class="li01" onclick="#">
+						<br />
+					</li>
+					<!--免运费-->
+					<li class="li02" onclick="#">
+						<br />
+					</li>
+					<!--全正品-->
+					<li class="li03" onclick="#">
+						<br />
+					</li>
+					<!--最放心-->
+				</ul>
+			</div>
+			<div class="Cfooter-info">
+				<dl class="w1000">
+					<dt>
+						<strong></strong><em>客服 9:00-24:00</em> 
+					</dt>
+					<dd>
+						<strong>新手指南</strong> <a target="_blank" href="#">购物流程</a> <a target="_blank" href="#">优惠券规则</a> <a target="_blank" href="#">联系客服</a> <a target="_blank" href="#">常见问题</a> 
+					</dd>
+					<dd>
+						<strong>付款方式</strong> <a target="_blank" href="#">在线支付</a> <a target="_blank" href="#">货到付款</a> <a target="_blank" href="#">钱包支付</a> 
+					</dd>
+					<dd>
+						<strong>配送服务</strong> <a target="_blank" href="#">配送时效及运费</a> <a target="_blank" href="#">验货与签收</a> 
+					</dd>
+					<dd>
+						<strong>售后服务</strong> <a target="_blank" href="#">退货政策</a> <a target="_blank" href="#">退货流程</a> <a target="_blank" href="#">退款方式及时效</a> 
+					</dd>
+					<dd class="f-sao1">
+						<strong>乐蜂网微信</strong><b></b> 
+					</dd>
+				</dl>
+			</div>
+			<div class="Cfooter-cr">
+				<a rel="nofollow" target="_blank" href="#">关于乐蜂</a> 
+				<a rel="nofollow" target="_blank" href="#">免责声明</a> 
+				<a rel="nofollow" target="_blank" href="#">隐私声明</a> 
+				<a rel="nofollow" target="_blank" href="#">版权声明</a> 
+				<a rel="nofollow" target="_blank" href="#">招聘信息</a> 
+				<a rel="nofollow" target="_blank" href="#">联系我们</a> 
+				<a rel="nofollow" target="_blank" href="#">帮助中心</a> 
+				<a rel="nofollow" target="_blank" href="#">友情链接</a> <br />
+				<span>Copyright <b>&copy;</b> 2008-2016 Lefeng.com All Rights Reserved.</span> <span>乐蜂（上海）信息技术有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<span>京公网安备11010502014183</span> <a rel="nofollow" target="_blank" href="http://images.lefeng.com/indexfiles/businesslicence_new.jpg?biid=7520">营业执照</a> 
+				<div class="Cfooter-cr-img">
+					<a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="kxwz" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="pjzxlm" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="itrust" rel="nofollow" target="_blank" href="#">中国互联网信用评价中心</a> 
+					<a href="#" target="_blank" rel="nofollow" class="xfwq"></a> 
+				</div>
+			</div>
+		</div>
+		<!--页尾--><!--页尾-->
+		
+	</body>
+</html>

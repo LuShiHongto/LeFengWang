@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录_乐蜂网</title>
+<link href="../css/denglu.css" rel="stylesheet" />
+</head>
+<body class="bodyBk login">
+	<!-- 头部 -->
+<div class="Chead-info">
+<link rel="stylesheet" type="text/css" href="../css/denglu_1.css" />
+	<div class="Chead-info-box">
+		<!--手机乐蜂 --> <a class="Chead-app" href="javascript:;">手机乐蜂</a> 
+		<div class="Chead-appDown" style="display:none;">
+			<div>
+				<img src="" height="112" width="112" />
+				<h6>
+					<b class="i1"></b><b class="i2"></b>客户端
+				</h6>
+			</div>
+<span class="fast-nav turl"><a class="Chead-app" href="javascript:;">手机乐蜂</a></span> 
+		</div>
+<!-- 收藏乐蜂 --> 
+<span class="Chead-save" id="Chead-save">收藏乐蜂</span> 
+<!-- 快速导航 --> 
+<span class="fast-nav turl" style="color:#666666;">快速导航<i><img src="../images/箭头.png"></i>
+	<div class="Chead-floatmenu" style="display:none;">
+				<div id="floatmenucon">
+					<a href="javascript:;">帮助中心</a> <a href="javascript:;">联系客服</a> <a href="javascript:;">商务合作</a> 
+					<h6>
+						<img src="" height="112" width="112" /> <b>惊喜码上来</b> 
+					</h6>
+				</div>
+	
+			</div>
+</span> 
+		
+<a class="turl" href="../index.html">乐蜂首页</a> 
+	</div>
+</div>
+
+<!-- Logo -->
+<div class="Logo-r">
+    <div class="Logo-info-r">
+        <a href="../index.html"><img src="../images/logo_1.png" ></a>
+    </div>
+</div>
+<!-- 表单 -->
+<div class="loginBk">
+    <div class="warp">
+		   <div class="css3 loginContent">
+              <div class="loginTitle">
+               <span class="lc1">注册</span>
+               <span class="lcr yiyou">已有乐蜂账号 ? <a href="denglu.html">登录</a></span>
+              </div>
+			  <ul class="loginInput">
+              	<div class="mailtips" style="display:none;"></div>
+                <li class="mailwrap nobk">
+                  <h2>手机号码</h2>
+                  <input type="text" value="" name="mobileNo" id="mobileNo" maxlength="11"/>
+				  <div class="focus_text mobileNoFlag successShowFlag" id="mobileNoSuccessShow" style="display: none;">请输入手机号</div> 
+                  <div class="errorTips error mobileNoFlag" id="mobileNoErrorShow" style="display: none;">手机格式有误，请重新输入</div>
+				  <div class="errorTips error mobileNoFlag" id="mobile_2" style="display: none;">该号码已注册过</div>
+				  <div class="errorTips error mobileNoFlag" id="haomahege" style="display: none;color: #58BC58;">手机号码合格</div>
+                </li>
+                
+                <!--图形验证码开始 -->
+		        <li class="yzmwrap" id="yzmSpan">
+					<h2>
+						验证码
+					</h2>
+					<input type="text" name="yzm" id="yzm" maxlength="4"/>
+					<span> 
+						<a href="javaScript:;" id="yzmPicImg">
+						<a href="javaScript:;" id="changeYzm">看不清?<br/>换一张</a> 
+					</span>
+					<p class="yanzheng_1" style="display:none;">验证码错误</p>
+					<p class="yanzheng_2" style="display:none; color: #58BC58;">验证码正确</p>
+					<input type="hidden" id="picUUID" value=""/>		
+				</li>
+		        
+			    <li class="pwwrap">
+					<h2>密码</h2>
+					<input type="password" name="passwd" id="passwd" value="" maxlength="20"/>
+					<div class="focus_text passwdFlag successShowFlag" id="passwdSuccessShow" style="display: none;">6-18位字符，推荐字母、数字至少一个符号组合的密码</div>
+					<div class="focus_text passwd1Flag successShowFlag" id="mimahege" style="display: none;color: #58BC58;">密码合格</div> 
+					<div class="errorTips error passwdFlag" id="passwdErrorShow" style="display: none;">密码过于简单</div>
+					<div class="errorIcon no passwdFlag" id="passwdErrorPic" style="display: none;"></div>
+		        </li>
+			    <li class="pwwrap">
+					<h2>确认密码</h2>
+					<input type="password" name="passwd1" id="passwd1" value="" maxlength="20"/>
+					<div class="focus_text passwd1Flag successShowFlag" id="passwd1SuccessShow" style="display: none;">请再次输入密码</div> 
+					
+					<div class="errorTips error passwd1Flag" id="passwd1ErrorShow" style="display: none;">两次密码不一致</div>
+					<div class="errorIcon no passwd1Flag" id="passwd1ErrorPic" style="display: none;"></div>
+		        </li>
+			    <li class="buttonwrap"><a href="javaScript:;" id="registerBtn">同意协议并注册</a></li>
+			    <li class="msgwrap"><div><a  href="http://www.lefeng.com/notice/86.html" target="_blank">《乐蜂网用户协议》 <br /> <br /> <br /> <br /></a></div></li>
+		     </ul>
+			  
+		   </div>
+    </div>    
+</div>
+
+<!-- 底部 -->
+ <div class="Cfooter loginfooter">
+	<div class="Cfooter-cr">
+		<a rel="nofollow" target="_blank" href="javascript:;">关于乐蜂</a> <a rel="nofollow" target="_blank" href="javascript:;">免责声明</a> <a rel="nofollow" target="_blank" href="javascript:;">隐私声明</a> <a rel="nofollow" target="_blank" href="javascript:;">版权声明</a> <a rel="nofollow" target="_blank" href="javascript:;">招聘信息</a> <a rel="nofollow" target="_blank" href="javascript:;">联系我们</a> <a rel="nofollow" target="_blank" href="javascript:;">帮助中心</a> <a rel="nofollow" target="_blank" href="javascript:;">友情链接</a> <br />
+<span>Copyright <b>&copy;</b> 2008-2016 Lefeng.com All Rights Reserved.</span> <span>乐蜂（上海）信息技术有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<span>京公网安备11010502014183</span> <a rel="nofollow" target="_blank" href="javascript:;">营业执照</a> 
+		<div class="Cfooter-cr-img">
+			<a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="javascript:;"></a> <a class="kxwz" rel="nofollow" target="_blank" href="javascript:;"></a> <a class="pjzxlm" rel="nofollow" target="_blank" href="javascript:;"></a> <a class="itrust" rel="nofollow" target="_blank" href="javascript:;">中国互联网信用评价中心</a> <a href="javascript:;" target="_blank" rel="nofollow" class="xfwq"></a> 
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../lib/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="../js/yzm.js"></script>
+<script type="text/javascript" src="../js/zhuce.js"></script>
+<script type="text/javascript" src="../jquery-cookie/jquery.cookie.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
+ 
+

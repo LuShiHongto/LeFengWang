@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>乐蜂网</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index_1.css"/>
+		<script type="text/javascript" src="lib/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="jquery-cookie/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="lib/jquery.toTop.js"></script>
+	</head>
+	<body>
+		<!-- 头顶三部分 -->
+		<div class="Chead">
+			<!-- 头部一部分 -->
+			<div class="Chead-info">
+				<div class="Chead-info-box">
+					<a class="Chead-app" href="javascript:;">手机乐蜂</a>
+					<!-- 收藏乐蜂 --><span class="Chead-save" id="Chead-save">收藏乐蜂</span> 
+					<!-- 快速导航 --> <span class="fast-nav turl" id="Chead_fastnav">快速导航<i></i></span>
+					<!-- 我的订单--><a class="turl Chead_myh" href="#" id="Chead_myh">我的订单<i></i></a>
+					<!-- 欢迎乐峰 --><span class="Chead-welcome"></span> 
+					<!-- 发货地址 -->送货到<a href="#" class="areaSellBtn">广州</a>
+				</div>
+			</div>
+			<div id="Chead-mxai">
+				<!-- 头部二部分 -->
+				<div class="Chead-main">
+					<div class="Chead-logo">
+						<a href="javascript:;"></a>
+					</div>
+					<div id="Chead_search" class="Chead-search">
+						<!--搜索-->
+						<div class="search-input">
+							<strong id="search-submit" class="search-submit">搜索</strong> <input autocomplete="off" id="search" value="搜商品" type="text" />
+							<div id="auto" class="searchtip">
+							</div>
+						</div>
+						<p id="hotp">
+							热门:
+							<a class="highlight" href="#">韩束集团</a>
+							<a class="highlight" href="#">洁面</a>
+							<a class="highlight" href="#">口红</a>
+							<a class="highlight" href="#">眼霜</a>
+						</p>
+					</div>
+					<!--购物车-->
+					<div class="Chead-shopping-wrap">
+						<div class="Chead-shopping" id="Chead-shopping">
+							<div class="shopping-btn">
+								<strong>0</strong>
+							</div>
+							<div class="shopping-list" style="display:none;">
+								<div class="shopping-list-title">
+									<strong></strong>
+								</div>
+								<div class="shopping-list-pro noshop" style="display:none;">
+									您的购物车还没有商品，<br />
+									赶紧去选购吧！
+								</div>
+								<div class="shopping-list-pro haveshop" style="display:none;">
+									<i></i>
+									<div class="shopping-list-bar" id="shopping_list_info">
+									</div>
+									<p>
+										共<b id="totalProduct" class="countnum">0</b>件商品
+									</p>
+									<p>
+										<span>共计：<b id="totalMoney" class="countprice"></b></span>
+									</p>
+									<a class="goshopping" href="javascript:;">去购物车结算</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 头部三部分 -->
+				<div id="Cnav-main_erji">
+					<div class="Cnav-main">
+						<div class="Cnav-menu-btn active">
+							<a href="javascript:"> 商品分类 </a> <i></i>
+						</div>
+						<div class="Cnav-one">
+							<a href="#">首页</a>
+							<a href="javascript:;" target="_blank">蜂购全球</a>
+						</div>
+						<div class="Cnav-right">
+							<a href="#" target="_blank" class="Cnav-right-icon-1"></a>
+							<a href="#" target="_blank" class="Cnav-right-icon-2"></a>
+							<a href="#" target="_blank" class="Cnav-right-icon-3"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 二级导航 -->
+			<div class="fl-main">
+				<div class="float-list" style="display:block">
+					<div class="orderDivId">
+						<dl id="webf0" >
+			<dt>
+				<strong class="class-1"><img src="http://a.vpimg4.com/upload/category/2016/04/20/136/c97f849b-37c7-4deb-8b21-cabe17ae8342.png" />护肤用品</strong>
+			<p>
+											<a href="javascript:;" target="_blank">
+					面膜        </a>
+											<a href="javascript:;" target="_blank">
+					防晒隔离        </a>
+											<a href="javascript:;" target="_blank">
+					护肤套装        </a>
+											<a href="javascript:;" target="_blank">
+					洁面        </a>
+											<a href="javascript:;" target="_blank">
+					面部护肤        </a>
+											<a href="javascript:;" target="_blank">
+					眼部护理        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								面膜 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								面贴膜                    </a>
+											<a href="javascript:;" target="_blank">
+								免洗面膜                    </a>
+											<a href="javascript:;" target="_blank">
+								眼膜                    </a>
+											<a href="javascript:;" target="_blank">
+								泥膜                    </a>
+											<a href="javascript:;" target="_blank">
+								泡泡面膜                    </a>
+											<a href="javascript:;" target="_blank">
+								鼻膜鼻贴                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								护肤套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								护肤套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								面部护肤 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								面霜                    </a>
+											<a href="javascript:;" target="_blank">
+								乳液                    </a>
+											<a href="javascript:;" target="_blank">
+								爽肤水                    </a>
+											<a href="javascript:;" target="_blank">
+								精华                    </a>
+											<a href="javascript:;" target="_blank">
+								喷雾                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								防晒隔离 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								防晒乳                    </a>
+											<a href="javascript:;" target="_blank">
+								防晒喷雾                    </a>
+											<a href="javascript:;" target="_blank">
+								隔离乳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								洁面 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								洁面乳                    </a>
+											<a href="javascript:;" target="_blank">
+								洁面膏                    </a>
+											<a href="javascript:;" target="_blank">
+								洁面皂                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								眼部护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								眼霜                    </a>
+											<a href="javascript:;" target="_blank">
+								眼膜                    </a>
+											<a href="javascript:;" target="_blank">
+								眼部精华                    </a>
+											<a href="javascript:;" target="_blank">
+								眼部护理套装                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf1" >
+			<dt>
+				<strong class="class-2"><img src="http://a.vpimg4.com/upload/category/2016/04/20/5/3c91b622-85bb-4cba-b35d-13e0af9c93c1.png" />彩妆用品</strong>
+			<p>
+											<a href="javascript:;" target="_blank">
+					底妆        </a>
+											<a href="javascript:;" target="_blank">
+					眼妆        </a>
+											<a href="javascript:;" target="_blank">
+					唇妆        </a>
+											<a href="javascript:;" target="_blank">
+					卸妆        </a>
+											<a href="javascript:;" target="_blank">
+					美甲        </a>
+											<a href="javascript:;" target="_blank">
+					彩妆套装        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								底妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								BB霜                    </a>
+											<a href="javascript:;" target="_blank">
+								CC霜                    </a>
+											<a href="javascript:;" target="_blank">
+								粉底液                    </a>
+											<a href="javascript:;" target="_blank">
+								粉饼                    </a>
+											<a href="javascript:;" target="_blank">
+								腮红                    </a>
+											<a href="javascript:;" target="_blank">
+								蜜粉散粉                    </a>
+											<a href="javascript:;" target="_blank">
+								妆前乳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								唇妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								唇彩                    </a>
+											<a href="javascript:;" target="_blank">
+								唇蜜                    </a>
+											<a href="javascript:;" target="_blank">
+								口红                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美甲 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								指甲油                    </a>
+											<a href="javascript:;" target="_blank">
+								卸甲水                    </a>
+											<a href="javascript:;" target="_blank">
+								指甲护理                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								眼妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								睫毛膏                    </a>
+											<a href="javascript:;" target="_blank">
+								眼线笔                    </a>
+											<a href="javascript:;" target="_blank">
+								眼线液                    </a>
+											<a href="javascript:;" target="_blank">
+								眼影                    </a>
+											<a href="javascript:;" target="_blank">
+								眉笔                    </a>
+											<a href="javascript:;" target="_blank">
+								眉粉                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								卸妆 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								卸妆水                    </a>
+											<a href="javascript:;" target="_blank">
+								卸妆油                    </a>
+											<a href="javascript:;" target="_blank">
+								卸妆乳                    </a>
+											<a href="javascript:;" target="_blank">
+								眼唇卸妆                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								彩妆套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								彩妆套装                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf2" >
+			<dt>
+				<strong class="class-3"><img src="http://a.vpimg4.com/upload/category/2016/04/26/97/8cbcff4d-84db-4ee5-9bf8-cfeef879424b.png" />美容工具</strong>
+			<p>
+											<a href="javascript:;" target="_blank">
+					美容工具        </a>
+											<a href="javascript:;" target="_blank">
+					美妆工具        </a>
+											<a href="javascript:;" target="_blank">
+					美发工具        </a>
+											<a href="javascript:;" target="_blank">
+					美甲工具        </a>
+											<a href="javascript:;" target="_blank">
+					洁面工具        </a>
+											<a href="javascript:;" target="_blank">
+					化妆工具        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美容工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								美容工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美发工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								美发梳                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								洁面工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								洁面工具                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美妆工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								美妆工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美甲工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								美甲工具                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								化妆工具 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								化妆工具                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf3" class="class-4-dl">
+			<dt>
+				<strong class="class-4"><img src="http://a.vpimg4.com/upload/category/2016/04/20/77/6a4e12f4-bea7-4dc2-9eff-6b0196e328a7.png" />香水香氛</strong>
+			<p>
+											<a href="javascript:;" target="_blank">
+					香水套装        </a>
+											<a href="javascript:;" target="_blank">
+					女士香水        </a>
+											<a href="javascript:;" target="_blank">
+					男士香水        </a>
+											<a href="javascript:;" target="_blank">
+					淡香水        </a>
+											<a href="javascript:;" target="_blank">
+					香氛精油        </a>
+											<a href="javascript:;" target="_blank">
+					走珠香水        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								香水套装 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								香水套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								男士香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								男士香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								香氛精油 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								单方精油                    </a>
+											<a href="javascript:;" target="_blank">
+								复方精油                    </a>
+											<a href="javascript:;" target="_blank">
+								基底精油                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								女士香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								女士香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								淡香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								淡香水                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								走珠香水 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								走珠香水                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+		<dl id="webf4" class="class-5-dl">
+			<dt>
+				<strong class="class-5"><img src="http://a.vpimg4.com/upload/category/2016/04/20/104/8592564a-b2ed-4e40-a777-c53b78714af5.png" />个人护理</strong>
+			<p>
+											<a href="javascript:;" target="_blank">
+					头发护理        </a>
+											<a href="javascript:;" target="_blank">
+					身体护理        </a>
+											<a href="javascript:;" target="_blank">
+					口腔护理        </a>
+											<a href="javascript:;" target="_blank">
+					手足护理        </a>
+											<a href="javascript:;" target="_blank">
+					美体瘦身        </a>
+											<a href="javascript:;" target="_blank">
+					胸部护理        </a>
+						</p>
+			</dt>
+			<dd>
+								<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								头发护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								洗护套装                    </a>
+											<a href="javascript:;" target="_blank">
+								洗发水                    </a>
+											<a href="javascript:;" target="_blank">
+								护发素                    </a>
+											<a href="javascript:;" target="_blank">
+								发膜                    </a>
+											<a href="javascript:;" target="_blank">
+								定型啫喱                    </a>
+											<a href="javascript:;" target="_blank">
+								定型喷雾                    </a>
+											<a href="javascript:;" target="_blank">
+								发蜡                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								口腔护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								牙膏                    </a>
+											<a href="javascript:;" target="_blank">
+								牙刷                    </a>
+											<a href="javascript:;" target="_blank">
+								漱口水                    </a>
+											<a href="javascript:;" target="_blank">
+								牙线                    </a>
+											<a href="javascript:;" target="_blank">
+								口腔护理套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								美体瘦身 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								美体瘦身                    </a>
+											<a href="javascript:;" target="_blank">
+								美体仪                    </a>
+										</div>
+									</li>
+						</ul>
+										<ul>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								身体护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								沐浴露                    </a>
+											<a href="javascript:;" target="_blank">
+								身体乳                    </a>
+											<a href="javascript:;" target="_blank">
+								脱毛膏                    </a>
+											<a href="javascript:;" target="_blank">
+								身体护理套装                    </a>
+											<a href="javascript:;" target="_blank">
+								沐浴套装                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								手足护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								护手霜                    </a>
+											<a href="javascript:;" target="_blank">
+								护足霜                    </a>
+											<a href="javascript:;" target="_blank">
+								足膜                    </a>
+											<a href="javascript:;" target="_blank">
+								足部护理                    </a>
+										</div>
+									</li>
+									<li>
+						<strong>
+							<a href="javascript:;" target="_blank">
+								胸部护理 > 
+							</a>
+						</strong>
+										<div class="float-list-cont">
+											<a href="javascript:;" target="_blank">
+								胸部护理                    </a>
+										</div>
+									</li>
+						</ul>
+							</dd>
+		</dl>
+
+						<a class="class-more-tips" target="_blank" href="http://list.lefeng.com"><i></i></a>
+						<a class="class-more-btn" target="_blank" href="#">查看全部分类 &gt;&gt;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 返回顶部 -->
+		<div class="scroll-to-top" id="scroll-to-top" style="display:none;"><i></i></div>
+		<!-- 头部以下 -->
+		<div id="mall-indexcon">
+			<!-- 轮播图 -->
+			<div class="first-show">
+				<div class="slide" id="slide">
+							
+							<p class="slide-btn" id="cycle_pager">
+							<p class="slide-btn" id="cycle_pager">
+							<p class="slide-btn" id="cycle_pager">
+							<p class="slide-btn" id="cycle_pager">
+							<p class="slide-btn" id="cycle_pager">
+							<p class="slide-btn" id="cycle_pager">
+							</p>
+							
+					<div id="cycle_id">
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/173/153958288752.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 百雀羚PECHOIN10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/125/153958294146.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 小迷糊10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/110/153958300557.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 玉兰油OLAY10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/168/153958305634.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 美宝莲Maybelline10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/18/153958311415.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 阿芙AFU10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+						<div style="z-index: 1; opacity: 1; display: block; background: url(http://b.appsimg.com/upload/maappactadmin/2018/10/15/115/153958316585.jpg) center no-repeat;">
+							<a target="_blank" title="PC焦点图 里美limi10.16-10.23"
+							   href="html/liebiao.html"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!--1f 每日精选-->
+			
+			<!--2f 品牌特卖-->
+				<h3 class="tit tit-2" id="featuredsale" ><i></i><span>每天<b>10点</b>上新</span> <a href="#" class="moreBrand">更多品牌 &gt; </a></h3>
+			<div class="content content-2">
+				<div class="content_2"></div>
+				<a href="http://brand.lefeng.com/" title="品牌大全" target="_blank">
+					<img src="images/lefengwang.jpg">
+				</a>
+			</div>
+				
+				
+				<!--爆款尝鲜-->
+					<h3 class="tit tit-7" id="baokuanchangxian"><i></i></h3>
+					<!-- <h3 class="tit tit-3"><i></i></h3> --><!-- 面部护理 -->
+			<div class="content content-3">
+				<div class="cnt_l">
+						</div>
+				<!-- <div class="cnt_m">											
+					
+				</div> -->
+			</div>
+					<!-- <h3 class="tit tit-4"><i></i></h3>彩妆香水 -->
+			
+					<!-- <h3 class="tit tit-5"><i></i></h3>身体护理 -->
+			
+					<!-- <h3 class="tit tit-6"><i></i></h3>食品保健 -->
+		<!-- 下载乐峰APP -->
+		<div class="app-download-ad" id="app-download-ad"></div>
+
+		<div class="float-left-menu">
+			<div class="flm-header"><i></i></div>
+			<span class="flm-1" target="#featuredsale"></span>
+			<span class="flm-2" target="#baokuanchangxian"></span>
+		</div>
+		<!--加入购物车成功-->
+		<div class="alt-succ" id="addsuccess" style="display:none;">
+			<div class="sum">
+				<h3>该商品已成功放入购物车</h3>
+				<p>购物车共 <b>1</b> 件商品&nbsp;&nbsp;合计：<b></b> 元</p>
+				<p><a class="pay" href="http://shopping.lefeng.com/showCart">去结算</a><a href="javascript:;">&lt;&lt;继续购物</a></p>
+				<span class="succ-ico"></span>
+			</div>
+			<a class="succ-close" href="javascript:;">关闭</a>
+		</div>
+		<!--加入购物车失败-->
+		<div class="alt-succ failure" style="display: none;">
+			<div class="sum">
+				<h3><span class="succ-ico"></span>加入购物车失败请稍后再试</h3>
+			</div>
+			<a class="succ-close" href="javascript:;">关闭</a>
+		</div>
+		<!--页尾-->
+		<div class="Cfooter">
+			<div class="Cfooter_service">
+				<ul class="w1000">
+					<li class="li01" onclick="#">
+						<br />
+					</li>
+					<!--免运费-->
+					<li class="li02" onclick="#">
+						<br />
+					</li>
+					<!--全正品-->
+					<li class="li03" onclick="#">
+						<br />
+					</li>
+					<!--最放心-->
+				</ul>
+			</div>
+			<div class="Cfooter-info">
+				<dl class="w1000">
+					<dt>
+						<strong></strong><em>客服 9:00-24:00</em> 
+					</dt>
+					<dd>
+						<strong>新手指南</strong> <a target="_blank" href="#">购物流程</a> <a target="_blank" href="#">优惠券规则</a> <a target="_blank" href="#">联系客服</a> <a target="_blank" href="#">常见问题</a> 
+					</dd>
+					<dd>
+						<strong>付款方式</strong> <a target="_blank" href="#">在线支付</a> <a target="_blank" href="#">货到付款</a> <a target="_blank" href="#">钱包支付</a> 
+					</dd>
+					<dd>
+						<strong>配送服务</strong> <a target="_blank" href="#">配送时效及运费</a> <a target="_blank" href="#">验货与签收</a> 
+					</dd>
+					<dd>
+						<strong>售后服务</strong> <a target="_blank" href="#">退货政策</a> <a target="_blank" href="#">退货流程</a> <a target="_blank" href="#">退款方式及时效</a> 
+					</dd>
+					<dd class="f-sao1">
+						<strong>乐蜂网微信</strong><b></b> 
+					</dd>
+				</dl>
+			</div>
+			<div class="Cfooter-cr">
+				<a rel="nofollow" target="_blank" href="#">关于乐蜂</a> 
+				<a rel="nofollow" target="_blank" href="#">免责声明</a> 
+				<a rel="nofollow" target="_blank" href="#">隐私声明</a> 
+				<a rel="nofollow" target="_blank" href="#">版权声明</a> 
+				<a rel="nofollow" target="_blank" href="#">招聘信息</a> 
+				<a rel="nofollow" target="_blank" href="#">联系我们</a> 
+				<a rel="nofollow" target="_blank" href="#">帮助中心</a> 
+				<a rel="nofollow" target="_blank" href="#">友情链接</a> <br />
+				<span>Copyright <b>&copy;</b> 2008-2016 Lefeng.com All Rights Reserved.</span> <span>乐蜂（上海）信息技术有限公司</span> <a target="_blank" href="http://www.miibeian.gov.cn/?biid=7520">津ICP备15005555号-1</a>&nbsp;&nbsp;<span>京公网安备11010502014183</span> <a rel="nofollow" target="_blank" href="http://images.lefeng.com/indexfiles/businesslicence_new.jpg?biid=7520">营业执照</a> 
+				<div class="Cfooter-cr-img">
+					<a id="___szfw_logo___" class="cxwz" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="kxwz" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="pjzxlm" rel="nofollow" target="_blank" href="#"></a> 
+					<a class="itrust" rel="nofollow" target="_blank" href="#">中国互联网信用评价中心</a> 
+					<a href="#" target="_blank" rel="nofollow" class="xfwq"></a> 
+				</div>
+			</div>
+		</div>
+		<!--页尾--><!--页尾-->
+	</body>
+</html>
